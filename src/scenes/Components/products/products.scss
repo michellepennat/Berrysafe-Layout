@@ -1,0 +1,315 @@
+.products {
+    padding: 0 23px 0 50px;
+
+    h3 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #5d30dd;
+        margin: 0;
+    }
+
+    .title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #5d30dd;
+        margin-bottom: 17px;
+    }
+
+    .card--padding {
+        padding: 24px;
+        z-index: -1;
+    }
+
+    &__card {
+        width: 100%;
+        background: #f7f7f7;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+        .ant-card-body {
+            padding: 0;
+        }
+
+        .imgInfo {
+            height: 100%;
+            width: 60%;
+
+            img {
+                width: 520px;
+                height: 230px;
+            }
+
+            &-information {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                display: flex;
+                flex-direction: row;
+                padding-left: 30px;
+                width: 100%;
+
+                .insurance {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 65%;
+
+                    &-title {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-bottom: 22px;
+
+                        img {
+                            width: 14px;
+                            height: 12.06px;
+                            margin-left: 10px;
+                        }
+
+                        h4 {
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #ffffff;
+                            margin: 0;
+                        }
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #ffffff;
+                        margin-bottom: 22px;
+                    }
+
+                    .icon {
+                        margin: 0 8px 0 4px;
+                    }
+
+                    .button {
+                        width: 271px;
+                        height: 40px;
+
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.02em;
+                        color: #ffffff;
+
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+
+                    &-icon {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        width: 35%;
+                        padding: 0 30px 30px 0;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product {
+            &-content {
+                width: 100%;
+                height: 112px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h6 {
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin: 0;
+                    color: #ffffff;
+                }
+            }
+        }
+        .sponsor {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &-img {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130.69%;
+                color: #4b3a7c;
+                margin: 10px 0 15px 17px;
+            }
+
+            span {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: -0.02em;
+                margin-left: 22px;
+                color: #4b3a7c;
+            }
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .button {
+                    width: 100%;
+                    height: 50.57px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &__cardInformation {
+        width: 100%;
+        background: #f6f6f6;
+        box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05);
+        padding: 24px;
+
+        .back {
+            width: 15.5px;
+            height: 15px;
+        }
+
+        .title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.02em;
+            margin: 0;
+
+            &--active {
+                color: #4b3a7c;
+            }
+            &--disabled {
+                color: #4a3a7c73;
+            }
+        }
+
+        span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120%;
+            margin: 0;
+            color: #1b1b1b;
+            opacity: 0.4;
+        }
+
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120%;
+            margin: 0;
+            color: #1b1b1b;
+        }
+
+        .divider--padding {
+            padding: 0 24px 0 24px;
+        }
+
+        .divider {
+            opacity: 0.4;
+            border: 1px solid #b2b2b2;
+            margin: 0 0 24px 0;
+        }
+
+        .options {
+            display: flex;
+            p {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 120%;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 0 10px 0 10px;
+            }
+        }
+
+        .button {
+            width: 292px;
+            height: 50px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            margin: 17px 0 10px 0;
+
+            .icon {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .product {
+            &-content {
+                height: 102px;
+            }
+        }
+    }
+}

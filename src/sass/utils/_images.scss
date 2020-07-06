@@ -1,0 +1,84 @@
+.product {
+    &-family {
+        background-image: url("../assets/img/product/img2.png");
+        background-repeat: no-repeat;
+        background-size: 130px 130px;
+        display: flex;
+    }
+
+    &-health {
+        background-image: url("../assets/img/product/img3.png");
+        background-repeat: no-repeat;
+        background-size: 130px 130px;
+        display: flex;
+    }
+
+    &-life {
+        background-image: url("../assets/img/product/img4.png");
+        background-repeat: no-repeat;
+        background-size: 130px 130px;
+        display: flex;
+    }
+
+    &-travel {
+        background-image: url("../assets/img/product/img5.png");
+        background-repeat: no-repeat;
+        background-size: 130px 130px;
+        display: flex;
+    }
+}
+
+.imgInfo {
+    &-information {
+        background-image: url("../assets/img/product/img1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .product {
+        &-family {
+            background-size: contain;
+        }
+
+        &-health {
+            background-size: contain;
+        }
+
+        &-life {
+            background-size: contain;
+        }
+
+        &-travel {
+            background-size: contain;
+        }
+    }
+}
+
+.interest {
+    &-one {
+        background-image: url("../assets/img/interest/img1.png");
+        background-repeat: no-repeat;
+    }
+
+    &-two {
+        background-image: url("../assets/img/interest/img2.png");
+        background-repeat: no-repeat;
+    }
+
+    &-three {
+        background-image: url("../assets/img/interest/img3.png");
+        background-repeat: no-repeat;
+    }
+
+    &-four {
+        background-image: url("../assets/img/interest/img4.png");
+        background-repeat: no-repeat;
+    }
+
+    &-five {
+        background-image: url("../assets/img/interest/img5.png");
+        background-repeat: no-repeat;
+    }
+}

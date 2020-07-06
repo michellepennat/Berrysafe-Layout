@@ -1,0 +1,88 @@
+.interests {
+    padding: 33px 23px 33px 50px;
+
+    h3 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #5d30dd;
+    }
+
+    .button {
+        height: 40px;
+        width: 88px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+
+    &__card {
+        width: 100%;
+        background: #f7f7f7;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+        .interest {
+            h4 {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: #ffffff;
+            }
+
+            &-one {
+                width: 390px;
+                height: 222px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+
+            &-two {
+                width: 162px;
+                height: 222px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+
+            &-three {
+                height: 222px;
+                display: flex;
+                flex-direction: column;
+
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            &-four {
+                height: 162px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+
+            &-five {
+                height: 162px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+        }
+    }
+}
