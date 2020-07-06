@@ -24,7 +24,7 @@ export function Products() {
                 <div className="card--padding">
                     <h3 className="title">Productos</h3>
                     <Row>
-                        <Col xl={16} >
+                        <Col xl={16}>
                             <div className="imgInfo-information">
                                 <div className="insurance">
                                     <div className="insurance-title">
