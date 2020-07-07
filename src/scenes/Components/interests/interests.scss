@@ -139,13 +139,39 @@
             color: #5d30dd;
         }
 
-        .ant-carousel .slick-slide {
-            display: flex;
-            border: none;
-        }
+        // .ant-carousel .slick-slide {
+        //     display: flex;
+        //     border: none;
+        // }
         // .ant-carousel .slick-dots-bottom {
         //     bottom: -30px;
         // }
+
+        // .ant-carousel .slick-dots li.slick-active button {
+        //     background: #5d30dd;
+        //     opacity: 1;
+        // }
+
+        // .ant-carousel .slick-dots li button {
+        //     display: block;
+        //     width: 6px;
+        //     height: 6px;
+        //     padding: 0;
+        //     background: #c4c4c4;
+        //     border-radius: 10px;
+        // }
+        // .slick-slide {
+        //     width: 346px !important;
+        // }
+
+        .ant-carousel .slick-slide {
+            height: 289px;
+            overflow: hidden;
+        }
+
+        .ant-carousel .slick-dots-bottom {
+            bottom: -30px;
+        }
 
         .ant-carousel .slick-dots li.slick-active button {
             background: #5d30dd;
