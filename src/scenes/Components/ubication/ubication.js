@@ -21,7 +21,7 @@ class Ubications extends React.Component {
                         zoom={15}
                         onClick={this.onMapClicked}
                     />
-                    <Row align="middle">
+                    <Row align="middle" justify="center">
                         <div className="ubication-information">
                             <Col>
                                 <Row align="middle" style={{ margin: '0 0 21px 24px' }}>

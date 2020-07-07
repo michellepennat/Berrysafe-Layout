@@ -1,12 +1,18 @@
 .information {
     padding: 72px 23px 32px 50px;
 
-    &__cardProfile {
+    &__cardProfile--mobile {
+        display: none;
+    }
+
+    &__cardProfile--desktop {
+        display: block;
         width: 100%;
         height: 224px;
         background: #f7f7f7;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 2px;
+        overflow: hidden;
 
         .ant-card-body {
             height: 100%;
@@ -17,8 +23,6 @@
 
         .image {
             display: flex;
-            flex-grow: 1;
-            width: 10%;
             flex-direction: column;
             align-items: center;
             margin: 23px 39px 57px 27px;
@@ -58,26 +62,22 @@
 
         .informationAgent {
             display: flex;
-            flex-grow: 3;
-            width: 40%;
             justify-content: center;
             flex-direction: column;
 
             &-name {
-                display: flex;
-                flex-direction: row;
-
                 img {
                     width: 12px;
                     height: 12px;
-                    margin: 4px 8px;
+                    margin-left: 6px;
                 }
 
                 h1 {
+                    display: flex;
+                    flex-direction: row;
                     font-family: Lato;
                     font-style: normal;
                     font-weight: 900;
-                    width: 380px;
                     font-size: 30px;
                     line-height: 36px;
                     color: #4b3a7c;
@@ -120,7 +120,6 @@
             }
 
             &-summary {
-                width: 90%;
                 margin-top: 18px;
 
                 p {
@@ -147,10 +146,8 @@
 
         .advisers {
             display: flex;
-            flex-grow: 1;
             align-items: flex-start;
             justify-content: center;
-            width: 10%;
         }
     }
 
@@ -178,6 +175,199 @@
 
         img {
             margin-right: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .information {
+        &__cardProfile {
+            .informationAgent {
+                &-name {
+                    h1 {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1060px) {
+    .information {
+        &__cardProfile {
+            .informationAgent {
+                &-name {
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+
+                &-data {
+                    width: 304px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .information {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .information {
+        &__cardProfile--desktop {
+            display: none;
+        }
+
+        &__cardProfile--mobile {
+            display: block;
+            width: 100%;
+            height: 526px;
+            background: #f7f7f7;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2px;
+            overflow: hidden;
+
+            .ant-card-body {
+                height: 100%;
+                padding: 0;
+            }
+
+            .image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 22px 0 30px 0;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                &-agentLevel {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    margin-top: 17px;
+
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        color: #5d30dd;
+                        margin: 3px 4px 0 3px;
+                    }
+                }
+                .checked {
+                    width: 16.88px;
+                    height: 18.18px;
+                }
+
+                .info {
+                    width: 10.28px;
+                    height: 10.28px;
+                }
+            }
+
+            .informationAgent {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                &-name {
+                    img {
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 6px;
+                    }
+
+                    h1 {
+                        display: flex;
+                        flex-direction: row;
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 25px;
+                        line-height: 30px;
+                        color: #4b3a7c;
+                        margin: 0;
+                    }
+                }
+
+                &-data {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 375px;
+                    margin: 20px 0 17px 0;
+
+                    img {
+                        width: 9.97px;
+                        height: 14.24px;
+                        margin: 20;
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 130.69%;
+                        color: #1b1b1b;
+                        opacity: 0.5;
+                        margin-bottom: 7px;
+                    }
+                }
+
+                &-contact {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 10px;
+                    img {
+                        width: 30px;
+                        width: 30px;
+                        margin-right: 53px;
+                    }
+                }
+
+                &-summary {
+                    margin-top: 10px;
+
+                    p {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 120%;
+                        color: #1b1b1b;
+                        margin: 0;
+                    }
+
+                    a {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 125.19%;
+                        color: #4b3a7c;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .advisers {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
         }
     }
 }

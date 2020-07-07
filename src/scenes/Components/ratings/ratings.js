@@ -30,7 +30,7 @@ export function Ratings() {
             <Card className="ratings__card">
                 <h3>Calificaciones de Usuarios</h3>
                 <Row align="middle" gutter={[16, 16]}>
-                    <Col xl={12}>
+                    <Col xs={24} sm={24} md={24} lg={12} xl={12}>
                         <div className="summary">
                             <div className="summary__average">
                                 <p>128 calificaciones</p>
@@ -72,7 +72,7 @@ export function Ratings() {
                         </div>
                         <button className="button button--secundary">Calificar agente</button>
                     </Col>
-                    <Col xl={12}>
+                    <Col xs={24} sm={24} md={24} lg={12} xl={12}>
                         <div className="reviews">
                             <Row align="middle" justify="end">
                                 <h5>Mejor y peor calificación</h5>

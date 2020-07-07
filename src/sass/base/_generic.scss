@@ -1,8 +1,9 @@
 .h-100 {
-  .ant-layout {
-    width: 100%;
-    height: 100%;
-  }
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .header {
@@ -41,6 +42,10 @@
   }
 }
 
+.button--fixed {
+  display: none;
+}
+
 .button {
   &--primary {
     background: #5d30dd;
@@ -59,5 +64,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  .header {
+    &__information {
+      a {
+        display: none;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button--fixed {
+      width: 80%;
+      z-index: 1;
+      margin-top: 10%;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      border: none;
+      height: 70.85px;
+      background: #25d366;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px 10px 0 0;
+      display: block;
+      position: fixed;
+    }
   }
 }

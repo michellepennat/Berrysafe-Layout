@@ -21,12 +21,15 @@ export function Principal() {
                     <a>¿Qué es Berrysafe?</a>
                 </div>
             </header>
+            <div className="content">
+                <button className="button--fixed">¡Contáctame ya!</button>
+            </div>
             <Row>
                 <Col xs={24} sm={24} md={24} lg={16} xl={15} xxl={15}>
                     <Information />
                     <Products />
                     <Ratings />
-                    {/* <Interests /> */}
+                    <Interests />
                     <Ubication />
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={8} xl={8} xxl={7}>

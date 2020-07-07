@@ -11,6 +11,7 @@
         align-items: center;
         letter-spacing: -0.02em;
         color: #5d30dd;
+        margin-bottom: 29;
     }
 
     .button {
@@ -26,63 +27,152 @@
         margin-top: 15px;
     }
 
-    &__card {
+    h4 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+
+    a {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.02em;
+        margin: 0;
+        color: #ffffff;
+
+        img {
+            width: 7px;
+            height: 9px;
+            margin-left: 12px;
+        }
+    }
+
+    &__card--mobile {
+        display: none;
+    }
+
+    &__card--desktop {
         width: 100%;
+        height: auto;
+        display: block;
         background: #f7f7f7;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 
         .interest {
-            h4 {
-                font-family: Lato;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 19px;
-                color: #ffffff;
+            &--sizeOne {
+                height: 300px;
             }
-
-            &-one {
-                width: 390px;
-                height: 222px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-start;
-            }
-
-            &-two {
-                width: 162px;
-                height: 222px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-start;
-            }
-
-            &-three {
-                height: 222px;
-                display: flex;
-                flex-direction: column;
-
-                justify-content: flex-start;
-                align-items: flex-end;
-            }
-
-            &-four {
+            &--sizeTwo {
                 height: 162px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: flex-start;
             }
+        }
 
-            &-five {
-                height: 162px;
+        .interests {
+            &__interest {
+                position: absolute;
+                top: 0;
+                left: 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: flex-start;
+                padding: 15px;
             }
+            &--justify {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .interests {
+        padding: 0;
+
+        .button--margin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0 0 0;
+        }
+
+        .button {
+            height: 40px;
+            width: 88px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h3 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #5d30dd;
+        }
+
+        .ant-carousel .slick-slide {
+            display: flex;
+            border: none;
+        }
+        .ant-carousel .slick-dots-bottom {
+            bottom: -30px;
+        }
+
+        .ant-carousel .slick-dots li.slick-active button {
+            background: #5d30dd;
+            opacity: 1;
+        }
+
+        .ant-carousel .slick-dots li button {
+            display: block;
+            width: 6px;
+            height: 6px;
+            padding: 0;
+            background: #c4c4c4;
+            border-radius: 10px;
+        }
+        .slick-slide {
+            width: 346px !important;
+        }
+
+        &__card--desktop {
+            display: none;
+        }
+
+        &__card--mobile {
+            display: block;
+            width: 100%;
+            background: #f6f6f6;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
 }

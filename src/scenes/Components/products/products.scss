@@ -1,6 +1,10 @@
 .products {
     padding: 0 23px 0 50px;
 
+    &--margin {
+        margin: 24px;
+    }
+
     h3 {
         font-family: Lato;
         font-style: normal;
@@ -9,7 +13,7 @@
         line-height: 24px;
         letter-spacing: -0.02em;
         color: #5d30dd;
-        margin: 0;
+        margin-bottom: 20px;
     }
 
     .title {
@@ -28,7 +32,12 @@
         z-index: -1;
     }
 
-    &__card {
+    &__card--mobile {
+        display: none;
+    }
+
+    &__card--desktop {
+        display: block;
         width: 100%;
         background: #f7f7f7;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,30 +46,18 @@
             padding: 0;
         }
 
-        .imgInfo {
-            height: 100%;
-            width: 60%;
-
-            img {
-                width: 520px;
-                height: 230px;
-            }
-
-            &-information {
+        .principal {
+            &__insurance {
                 position: absolute;
-                left: 0;
-                bottom: 0;
                 top: 0;
-                display: flex;
-                flex-direction: row;
-                padding-left: 30px;
-                width: 100%;
+                left: 0;
 
-                .insurance {
+                .info {
                     display: flex;
-                    justify-content: center;
                     flex-direction: column;
-                    width: 65%;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: 40px;
 
                     &-title {
                         display: flex;
@@ -68,20 +65,20 @@
                         align-items: center;
                         margin-bottom: 22px;
 
-                        img {
-                            width: 14px;
-                            height: 12.06px;
-                            margin-left: 10px;
-                        }
-
                         h4 {
                             font-family: Lato;
                             font-style: normal;
                             font-weight: bold;
-                            font-size: 16px;
+                            font-size: 20px;
                             line-height: 19px;
-                            color: #ffffff;
                             margin: 0;
+                            color: #ffffff;
+                        }
+
+                        img {
+                            width: 16px;
+                            height: 14px;
+                            margin-left: 15px;
                         }
                     }
 
@@ -95,66 +92,89 @@
                         margin-bottom: 22px;
                     }
 
-                    .icon {
-                        margin: 0 8px 0 4px;
-                    }
-
                     .button {
                         width: 271px;
                         height: 40px;
-
                         font-family: Lato;
                         font-style: normal;
                         font-weight: bold;
                         font-size: 14px;
                         line-height: 17px;
-                        display: flex;
-                        align-items: center;
-                        letter-spacing: -0.02em;
                         color: #ffffff;
 
-                        img {
-                            width: 15px;
-                            height: 15px;
+                        .icon {
+                            margin-right: 10px;
                         }
                     }
+                }
 
-                    &-icon {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: flex-end;
-                        justify-content: flex-end;
-                        width: 35%;
-                        padding: 0 30px 30px 0;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
+                .arrow {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    padding: 0 30px 30px 0;
                 }
             }
         }
 
-        .product {
-            &-content {
-                width: 100%;
-                height: 130px;
+        .others {
+            h6 {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #ffffff;
+                margin: 0;
+            }
+
+            &--margin {
+                margin-top: 20px;
+            }
+
+            &-family {
+                position: absolute;
+                top: 0;
+                left: 0;
                 display: flex;
-                align-items: center;
                 justify-content: center;
-
-                h6 {
-                    font-family: Lato;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 17px;
-                    margin: 0;
-                    color: #ffffff;
-                }
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            &-health {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            &-life {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            &-travel {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
             }
         }
+
         .sponsor {
             display: flex;
             flex-direction: column;
@@ -174,7 +194,7 @@
                 font-size: 12px;
                 line-height: 130.69%;
                 color: #4b3a7c;
-                margin: 10px 0 15px 17px;
+                margin: 30px 0 15px 17px;
             }
 
             span {
@@ -184,8 +204,13 @@
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: -0.02em;
-                margin-left: 22px;
+                margin: 22px 13px 22px 22px;
                 color: #4b3a7c;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
             }
 
             &-button {
@@ -194,7 +219,8 @@
                 justify-content: center;
 
                 .button {
-                    width: 100%;
+                    width: 88%;
+                    margin-right: 10px;
                     height: 50.57px;
                     font-family: Roboto;
                     font-style: normal;
@@ -306,9 +332,275 @@
     }
 
     @media screen and (max-width: 1280px) {
-        .product {
-            &-content {
-                height: 102px;
+        .products {
+            &__card {
+                .ant-card-body {
+                    padding: 0;
+                }
+                .principal {
+                    &__insurance {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        .info {
+                            padding: 0 0 0 30px;
+
+                            &-title {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                margin-bottom: 22px;
+
+                                h4 {
+                                    font-size: 16px;
+                                    margin: 0;
+                                }
+
+                                img {
+                                    width: 14px;
+                                    height: 12.6px;
+                                }
+                            }
+
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .others {
+            height: 102px;
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .products {
+        padding: 0;
+
+        h2 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            padding: 19px 0 28px 24px;
+        }
+
+        h3 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #5d30dd;
+            margin: 19px 0 28px 24px;
+        }
+
+        &__card--desktop {
+            display: none;
+        }
+
+        &__card--mobile {
+            display: block;
+            width: 100%;
+            background: #f7f7f7;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+            .button {
+                width: 292px;
+                height: 50px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.02em;
+                color: #ffffff;
+                margin: 17px 0 10px 0;
+    
+                .icon {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+            }
+
+            .ant-card-body {
+                padding: 0;
+
+                .banner {
+                    width: 100%;
+                    height: 169.52px;
+                    background: #5d30dd;
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+
+            .ant-carousel .slick-slide {
+                display: flex;
+                justify-content: flex-start;
+                width: 279px;
+                height: 179px;
+                overflow: hidden;
+            }
+
+            .ant-carousel .slick-dots-bottom {
+                bottom: -30px;
+                left: 40%;
+            }
+
+            .ant-carousel .slick-dots li.slick-active button {
+                background: #5d30dd;
+                opacity: 1;
+            }
+
+            .ant-carousel .slick-dots li button {
+                display: block;
+                width: 6px;
+                height: 6px;
+                padding: 0;
+                background: #c4c4c4;
+                border-radius: 10px;
+            }
+            .slick-slide {
+                width: 346px !important;
+            }
+        }
+
+        .others {
+            background: #f6f6f6;
+            box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+
+            &__product {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &--margin {
+                    margin-bottom: 10px;
+
+                    .button {
+                        width: 165px;
+                        height: 50px;
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 19px;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: -0.02em;
+                        color: #ffffff;
+                        margin: 17px 0 10px 0;
+            
+                        .icon {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    padding: 20px;
+
+                    h5 {
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: -0.02em;
+                        color: #ffffff;
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .sponsor--margin {
+            margin-top: 70px;
+        }
+        .sponsor {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &-img {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130.69%;
+                color: #4b3a7c;
+                margin: 30px 0 15px 17px;
+            }
+
+            span {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: -0.02em;
+                margin: 22px 13px 22px 22px;
+                color: #4b3a7c;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .button {
+                    width: 88%;
+                    margin-right: 10px;
+                    height: 50.57px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: #ffffff;
+                }
             }
         }
     }

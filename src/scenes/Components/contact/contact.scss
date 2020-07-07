@@ -2,7 +2,7 @@
     padding: 72px 20px 0 24px;
     display: flex;
     position: fixed;
-    
+
     &__card {
         .ant-card-body {
             padding: 0;
@@ -163,5 +163,11 @@
                 height: 90px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .contact {
+        display: none;
     }
 }
