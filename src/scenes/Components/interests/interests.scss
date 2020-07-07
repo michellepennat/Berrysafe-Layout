@@ -68,7 +68,6 @@
 
     &__card--desktop {
         width: 100%;
-        height: auto;
         display: block;
         background: #f7f7f7;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,6 +126,7 @@
             line-height: 17px;
             text-align: center;
             color: #ffffff;
+            margin: 0;
         }
 
         h3 {
@@ -143,9 +143,9 @@
             display: flex;
             border: none;
         }
-        .ant-carousel .slick-dots-bottom {
-            bottom: -30px;
-        }
+        // .ant-carousel .slick-dots-bottom {
+        //     bottom: -30px;
+        // }
 
         .ant-carousel .slick-dots li.slick-active button {
             background: #5d30dd;

@@ -89,9 +89,7 @@
     align-items: center;
 
     .button--fixed {
-      width: 80%;
-      z-index: 1;
-      margin-top: 10%;
+      width: 100%;
       font-family: Lato;
       font-style: normal;
       font-weight: bold;
@@ -99,13 +97,14 @@
       line-height: 24px;
       letter-spacing: -0.02em;
       color: #ffffff;
+      text-align: left;
+      padding-left: 49px;
       border: none;
       height: 70.85px;
       background: #25d366;
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px 10px 0 0;
       display: block;
-      position: fixed;
+      position: relative;
     }
   }
 }

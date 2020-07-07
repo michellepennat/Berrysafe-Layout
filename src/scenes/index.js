@@ -13,6 +13,7 @@ export function Principal() {
 
     return (
         <div>
+
             <header className="header">
                 <div className="header__img">
                     <img src={Logo} />
@@ -21,10 +22,11 @@ export function Principal() {
                     <a>¿Qué es Berrysafe?</a>
                 </div>
             </header>
-            <div className="content">
-                <button className="button--fixed">¡Contáctame ya!</button>
-            </div>
+
             <Row>
+                    <div className="content">
+                        <button className="button--fixed">¡Contáctame ya!</button>
+                    </div>
                 <Col xs={24} sm={24} md={24} lg={16} xl={15} xxl={15}>
                     <Information />
                     <Products />
